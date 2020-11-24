@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="turtlesim" pkg="turtlesim" type="turtlesim_node" />
+  <node name="move" pkg="detect_text_mover" type="move_node.py" output="screen">
+    <remap from="/cmd_vel" to="/turtle1/cmd_vel" />
+  </node>
+</launch>
